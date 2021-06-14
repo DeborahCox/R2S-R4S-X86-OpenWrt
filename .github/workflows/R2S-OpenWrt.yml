@@ -3,10 +3,12 @@ name: R2S-OpenWrt
 on:
 #  schedule:
 #    - cron: 5 6 * * 0
+  push:
+    branches:
+      - master
   watch:
     types: started
 
-workflow_dispatch:
 
 jobs:
   build:
