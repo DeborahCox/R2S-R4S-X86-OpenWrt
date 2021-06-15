@@ -145,5 +145,5 @@ jobs:
         tag: 21.02.0-rc3
         commit: master
         replacesArtifacts: true
-        token: ${{ secrets.workflow_token }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: ./artifact/*.zip
