@@ -129,8 +129,16 @@ CONFIG_PACKAGE_zerotier=y
 CONFIG_PACKAGE_coremark=y
 CONFIG_PACKAGE_htop=y
 CONFIG_PACKAGE_subconverter=y
+
+### Editors ###
 CONFIG_PACKAGE_nano=y
-CONFIG_PACKAGE_procps-ng-watch=y
+
+### Busybox ###
+CONFIG_BUSYBOX_DEFAULT_WATCH=y
+CONFIG_PACKAGE_collectd=y
+
+### IP Addresses and Names ###
+CONFIG_PACKAGE_bind-dig=y
 
 ### ZRAM ###
 CONFIG_PACKAGE_luci-app-compressed-memory=y
@@ -146,9 +154,11 @@ CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_kmod-gpio-button-hotplug=y
 
 ### SHARE NETWORK ###
-CONFIG_PACKAGE_usbmuxd=y
-CONFIG_PACKAGE_kmod-usb-net-rndis=y
-CONFIG_PACKAGE_kmod-usb-net-ipheth=y
+#CONFIG_PACKAGE_usbmuxd=y
+CONFIG_PACKAGE_rsync=y
+CONFIG_PACKAGE_curl=y
+#CONFIG_PACKAGE_kmod-usb-net-rndis=y
+#CONFIG_PACKAGE_kmod-usb-net-ipheth=y
 
 ### CRYPTO ###
 CONFIG_PACKAGE_kmod-crypto-acompress=y
